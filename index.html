@@ -15,8 +15,44 @@
 		right:10
       }
 	  body{
-		  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
-	  }
+    /* Full viewport size for a full-page effect, adjust as needed */
+    	width: 100vw;
+    	height: 100vh; 
+    
+    /* Define the rainbow gradient with repeated colors to ensure a seamless loop */
+    	background: linear-gradient(
+      		124deg, 
+      		#ff2400, 
+      		#e81d1d, 
+      		#e8b71d, 
+      		#e3e81d, 
+      		#1de840, 
+      		#1ddde8, 
+      		#2b1de8, 
+      		#dd00f3, 
+      		#dd00f3 /* Repeat the end color to create a smoother loop */
+    	);	
+    
+    /* Set a very large background size so the gradient can move without repeating abruptly */
+    	background-size: 1800% 1800%;
+    
+    /* Apply the animation */
+    	animation: rainbow 18s ease infinite; /* Adjust duration (e.g., 18s) and timing function (ease, linear, etc.) */
+	}
+
+/* Define the animation keyframes */
+		@keyframes rainbow {
+    		0% {
+        background-position: 0% 82%; /* Starting position */
+    		}
+    		50% {
+        		background-position: 100% 19%; /* Midpoint position */
+    		}
+    		100% {
+        		background-position: 0% 82%; /* Return to starting position for infinite loop */
+    		}
+		}
+
     </style>
   </head>
   <body>
