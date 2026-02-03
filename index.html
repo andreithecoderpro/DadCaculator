@@ -1,4 +1,4 @@
-<html>
+<!--<html>
   <head>
     <style>
 	  button{
@@ -104,5 +104,95 @@
 			}
 			
 		</script>
+  </body>
+</html>-->
+<html>
+  <head>
+    <style>
+      button{
+        font-size: 25px;
+        background-color: black;
+        color: white;
+      }
+
+      #square1{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+      }
+
+      #square2{
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        right: 10px;
+      }
+
+      body{
+        width: 100vw;
+        height: 100vh;
+
+        background: linear-gradient(
+          124deg,
+          #ff2400,
+          #e81d1d,
+          #e8b71d,
+          #e3e81d,
+          #1de840,
+          #1ddde8,
+          #2b1de8,
+          #dd00f3,
+          #dd00f3
+        );
+        background-size: 1800% 1800%;
+        animation: rainbow 18s ease infinite;
+      }
+
+      @keyframes rainbow {
+        0% { background-position: 0% 82%; }
+        50% { background-position: 100% 19%; }
+        100% { background-position: 0% 82%; }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="square1"></div>
+    <div id="square2"></div>
+
+    <center>
+      <button onClick="button1()">1</button>
+      <button onClick="button2()">2</button>
+      <button onClick="button3()">3</button>
+      <button onClick="button4()">4</button>
+      <button onClick="button5()">5</button>
+      <button onClick="button6()">6</button>
+      <button onClick="button7()">7</button>
+      <button onClick="button8()">8</button>
+      <button onClick="button9()">9</button>
+      <button onClick="button10()">10</button>
+    </center>
+
+    <center><h3 id="num">0</h3></center>
+
+    <script>
+      let num = "";
+
+      function update(){
+        document.getElementById("num").innerHTML = num;
+      }
+
+      function button1(){ num += "1"; update(); }
+      function button2(){ num += "2"; update(); }
+      function button3(){ num += "3"; update(); }
+      function button4(){ num += "4"; update(); }
+      function button5(){ num += "5"; update(); }
+      function button6(){ num += "6"; update(); }
+      function button7(){ num += "7"; update(); }
+      function button8(){ num += "8"; update(); }
+      function button9(){ num += "9"; update(); }
+      function button10(){ num += "10"; update(); }
+    </script>
   </body>
 </html>
