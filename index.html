@@ -8,20 +8,23 @@
 				
       }
       #square2{
-				position: absolute;
+		position: absolute;
         height: 100;
         width: 100;
         background-color: blue;
 		right:10
       }
+	  body{
+		  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+	  }
     </style>
   </head>
   <body>
     <div id="square1"></div><div id="square2"></div>
     <center><button onClick="button1">1</button><button Click="button2">2</button><button Click="button3">3</button><button Click="button4">4</button><button Click="button5">5</button><button Click="button6">6</button><button Click="button7">7</button><button Click="button8">8</button><button Click="button9">9</button><button Click="button10">10</button></center>
-		<h3 id="num">0</h3>
+		<center><h3 id="num">0</h3></center>
 		<script>
-			var num="";
+			const num="";
 			function button1(){
 				num=num+"1"
 				document.getElementById("num").innerHTML=num
