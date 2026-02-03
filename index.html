@@ -1,12 +1,65 @@
 <html>
   <head>
     <style>
-      #questioner{
-        
+      #square1{
+        height: 100;
+        width: 100;
+        background-color: green;
+				
+      }
+      #square2{
+				position: absolute;
+        height: 100;
+        width: 100;
+        background-color: blue;
+				top:50;
+				right:10
       }
     </style>
   </head>
   <body>
-    
+    <div id="square1"></div><div id="square2"></div>
+    <center><button onClick="button1"></button><buttonon Click="button2"></button><button Click="button3"></button><button Click="button4"></button><button Click="button4"></button><button Click="button5"></button><button Click="button6"></button><button Click="button7"></button><button Click="button8"></button><button Click="button9"></button><button Click="button10"></button></center>
+		<h3 id="num"></h3>
+		<script>
+			var num="";
+			function button1(){
+				num=num+"1"
+				document.getElementById("num").innerHTML=num
+			}
+			function button2(){
+				num=num+"2"
+				document.getElementById("num").innerHTML=num
+			}
+			function button3(){
+				num=num+"3"
+				document.getElementById("num").innerHTML=num
+			}
+			function button4(){
+				num=num+"4"
+				document.getElementById("num").innerHTML=num
+			}
+			function button5(){
+				num=num+"5"
+				document.getElementById("num").innerHTML=num
+			}
+			function button6(){
+				num=num+"6"
+				document.getElementById("num").innerHTML=num
+			}
+			function button7(){
+				num=num+"8"
+				document.getElementById("num").innerHTML=num
+			}
+			function button9(){
+				num=num+"9"
+				document.getElementById("num").innerHTML=num
+			}
+			function button10(){
+				num=num+"10"
+				document.getElementById("num").innerHTML=num
+			}
+			
+		</script>
   </body>
 </html>
