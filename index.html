@@ -74,8 +74,10 @@
         document.getElementById("num").innerHTML = num;
       }
       function clear(){
-        document.getElementById("num").innerHTML = "";
+        num = "";
+        update();
       }
+
 
       function button1(){ num += "1"; update(); }
       function button2(){ num += "2"; update(); }
