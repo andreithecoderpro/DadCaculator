@@ -61,7 +61,8 @@
       <button onClick="button7()">7</button>
       <button onClick="button8()">8</button>
       <button onClick="button9()">9</button>
-      <button onClick="button10()">10</button>
+      <button onClick="button10()">0</button>
+      <button onClick="clear()">Clear</button>
     </center>
 
     <center><h3 id="num">0</h3></center>
@@ -71,6 +72,9 @@
 
       function update(){
         document.getElementById("num").innerHTML = num;
+      }
+      function clear(){
+        document.getElementById("num").innerHTML = "";
       }
 
       function button1(){ num += "1"; update(); }
@@ -82,7 +86,7 @@
       function button7(){ num += "7"; update(); }
       function button8(){ num += "8"; update(); }
       function button9(){ num += "9"; update(); }
-      function button10(){ num += "10"; update(); }
+      function button10(){ num += "0"; update(); }
     </script>
   </body>
 </html>
